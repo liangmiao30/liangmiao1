@@ -1,0 +1,14 @@
+int getCode(PNode List ,int val){
+int j;
+PNode P = List->Next; 
+j=0;
+while(P!=NULL){
+P=P->Next;
+++j;
+if(val==P->Element){
+break;
+}
+}
+return j;
+
+}
